@@ -59,7 +59,7 @@ public class PhotoCompress {
         Graphics2D g = newImg.createGraphics();
         g.drawImage(src,0,0,old_w,old_h,null);
         g.dispose();
-        newImg.getGraphics().drawImage(src.getScaledInstance(new_w,new_h,4),0,0,null);
+        newImg.getGraphics().drawImage(src.getScaledInstance(new_w,new_h,10),0,0,null);
         OutImage(fileName,outImgPath,newImg);
         }//
 
